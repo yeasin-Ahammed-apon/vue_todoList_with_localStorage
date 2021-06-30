@@ -1,4 +1,8 @@
 # todo_list_with_localstorage
+__________________________________________________________
+## add a note with details
+## after refreshing page , data will not go , coz localstorage is implemented 
+## note can be delete
 
 ## Project setup
 ```
