@@ -1,21 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import To from '../views/To.vue'
+import Member from "../views/Members.vue"
+import Problems from "../views/Problems.vue"
 
 Vue.use(VueRouter)
 
-const routes = [
+const routes = [ 
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  }, 
+    name: 'Problems',
+    component: Problems
+  },  
   {
     path: '/todo',
     name: 'To',
     component: To
   }, 
+  {
+    path: '/member_list',
+    name: 'Member',
+    component: Member
+  }, 
+  
 ]
 
 const router = new VueRouter({
