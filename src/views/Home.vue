@@ -43,7 +43,7 @@
 export default {
   data() {
     return {
-      notes:[],
+      notes:[].reverse(),
       note_title:"",
       note_details:"",      
       
@@ -60,8 +60,14 @@ export default {
         localStorage.setItem('notes','[]')
       }
     this.notes = JSON.parse(localStorage.getItem("notes"))
-    this.notes.reverse()
+    // this.notes
   },
+  beforeUpdate() {
+    // this.notes = JSON.parse(localStorage.getItem("notes"))
+    // this.notes.reverse()
+    
+  },
+  
   
   methods: {
     addnote() {
@@ -80,7 +86,8 @@ export default {
     }   
     ,
     deletenote(data){
-      this.notes.splice(data,1)
+      this.notes.reverse().splice(data,1)
+      this.notes.reverse()
       localStorage.notes = JSON.stringify(this.notes)
     }
   },
