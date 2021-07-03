@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import To from '../views/To.vue'
 import Member from "../views/Members.vue"
 import Problems from "../views/Problems.vue"
+import Web from '../views/Web.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,12 @@ const routes = [
     path: '/member_list',
     name: 'Member',
     component: Member
+  }
+  , 
+  {
+    path: '/web',
+    name: 'Web',
+    component: Web
   }, 
   
 ]

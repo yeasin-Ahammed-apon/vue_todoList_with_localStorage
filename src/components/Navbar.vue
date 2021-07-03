@@ -14,6 +14,9 @@
           <router-link to="/todo" class="nav-link">Todo</router-link>
         </li>                
         <li class="nav-item">                      
+          <router-link to="/web" class="nav-link">web_dev_doc</router-link>
+        </li> 
+        <li class="nav-item">                      
           <router-link to="/member_list" class="nav-link">Members</router-link>
         </li>                
                  
